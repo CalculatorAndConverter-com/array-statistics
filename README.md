@@ -1,4 +1,4 @@
-# array-statics
+# array-statistics
 
 [![NPM](https://nodei.co/npm/array-statistics.png)](https://nodei.co/npm/array-statistics/)
 
@@ -87,7 +87,7 @@ At the time of this packages launch, its sole dependency is [big.js](https://www
 
 The functions in this package were first created by CalculatorAndConverter.com for use in this online tool: [https://calculatorandconverter.com/math/mean-median-mode-range-calculator](https://calculatorandconverter.com/math/mean-median-mode-range-calculator)
 
-We created this package to save other developers time when running basic statistical calculations on arrays.
+We created this package to save ourselves and other developers time when needing to run basic statistical calculations on arrays.
 
 ## LICENSE
 
