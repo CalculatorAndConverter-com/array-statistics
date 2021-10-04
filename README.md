@@ -39,15 +39,15 @@ console.log(`maximum:`, maximum(array))
 console.log(`range:`, range(array))
 console.log(`standardDeviation:`, standardDeviation(array))
 
-<!-- sum: 90
-count: 5
-mean: 18
-median: 20
-mode: [ 10, 20 ]
-minimum: 10
-maximum: 30
-range: 20
-standardDeviation: 7.483314773547883 -->
+// sum: 90
+// count: 5
+// mean: 18
+// median: 20
+// mode: [10, 20]
+// minimum: 10
+// maximum: 30
+// range: 20
+// standardDeviation: 7.483314773547883
 ```
 
 ## Conversions, Value Filtering, and Error Handling
@@ -75,6 +75,6 @@ let mixedArray = [
   undefined,
   null,
 ]
-console.log(mixedArray)
+// becomes =>
 // [ 0, 9, 987, 1234.56, 123456789, 58.23, 200000.8, 12000 ]
 ```
