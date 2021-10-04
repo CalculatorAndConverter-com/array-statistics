@@ -1,0 +1,23 @@
+{
+  "name": "array-statistics",
+  "version": "1.0.0",
+  "description": "Simple Statistics Functions for Javascript Arrays",
+  "main": "array-statistics.js",
+  "dependencies": {
+    "big-js": "^3.1.3"
+  },
+  "license": "MIT",
+  "author": "CalculatorAndConverter.com (https://calculatorandconverter.com/)",
+  "keywords": [
+    "array",
+    "statistics",
+    "stats",
+    "array statistics",
+    "statistics array",
+    "statics formulas",
+    "formula statistics",
+    "array statistics formulas",
+    "array stats",
+    "stats array"
+  ]
+}
