@@ -3,8 +3,9 @@
 [![NPM](https://nodei.co/npm/array-statistics.png)](https://nodei.co/npm/array-statistics/)
 
 A simple to use package for performing statistical calculations on arrays of numbers.
+[https://calculatorandconverter.com/docs/array-statistics](https://calculatorandconverter.com/docs/array-statistics)
 
-**Note:** All of the exported functions in this package will attempt to convert any strings in your array to numbers (e.g., "5.67" => 5.67, "100,000.56" => 100000.56, "$56.58" => 56.58). All other values will filtered out of the calculations. See below for more details.
+**Note:** All of the exported functions in this package will attempt to convert any strings in your array to numbers (e.g., "5.67" => 5.67, "100,000.56" => 100000.56, "$56.58" => 56.58). All other values will be filtered out of the calculations. See below for more details.
 
 ## Install
 
