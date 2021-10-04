@@ -12,7 +12,7 @@ npm i array-statistics
 
 ## Example
 
-```
+```javascript
 const {
   sum,
   count,
