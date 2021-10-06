@@ -98,7 +98,7 @@ At the time of this packages launch, its sole dependency is [big.js](https://www
 
 ## Creation
 
-The functions in this package were first created by CalculatorAndConverter.com for use in these online tools: \*\*\*
+The functions in this package were first created by CalculatorAndConverter.com for use in these online tools:
 
 - [https://calculatorandconverter.com/math/mean-median-mode-range-calculator](https://calculatorandconverter.com/math/mean-median-mode-range-calculator)
 - [https://calculatorandconverter.com/math/sum-of-squares-calculator](https://calculatorandconverter.com/math/sum-of-squares-calculator)
