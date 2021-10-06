@@ -100,11 +100,63 @@ let range = (array) => {
   return Number(Big(maximum(array)).minus(Big(minimum(array))))
 }
 
-let standardDeviation = (array) => {
+let sumOfSquares = (array) => {
   let arr = ArrayValuesToNumbersAndCheckThatIncludesAtLeastOneValidNo(array)
   let c = arr.length
   let m = mean(arr)
-  let SquareRoot = arr
+  let sumOfSquares = arr
+    .map((n) => {
+      let nMinusMean = Big(n).minus(Big(m))
+      let power = nMinusMean.pow(2)
+      return power
+    })
+    .reduce((a, b) => {
+      return Big(a).plus(Big(b))
+    })
+
+  return Number(sumOfSquares)
+}
+
+let populationVariance = (array) => {
+  let arr = ArrayValuesToNumbersAndCheckThatIncludesAtLeastOneValidNo(array)
+  let c = arr.length
+  let m = mean(arr)
+  let variance = arr
+    .map((n) => {
+      let nMinusMean = Big(n).minus(Big(m))
+      let power = nMinusMean.pow(2)
+      return power
+    })
+    .reduce((a, b) => {
+      return Big(a).plus(Big(b))
+    })
+    .div(Big(c))
+
+  return Number(variance)
+}
+let sampleVariance = (array) => {
+  let arr = ArrayValuesToNumbersAndCheckThatIncludesAtLeastOneValidNo(array)
+  let c = arr.length
+  let m = mean(arr)
+  let variance = arr
+    .map((n) => {
+      let nMinusMean = Big(n).minus(Big(m))
+      let power = nMinusMean.pow(2)
+      return power
+    })
+    .reduce((a, b) => {
+      return Big(a).plus(Big(b))
+    })
+    .div(Big(c).minus(Big(1)))
+
+  return Number(variance)
+}
+
+let populationStandardDeviation = (array) => {
+  let arr = ArrayValuesToNumbersAndCheckThatIncludesAtLeastOneValidNo(array)
+  let c = arr.length
+  let m = mean(arr)
+  let stdev = arr
     .map((n) => {
       let nMinusMean = Big(n).minus(Big(m))
       let power = nMinusMean.pow(2)
@@ -116,7 +168,25 @@ let standardDeviation = (array) => {
     .div(Big(c))
     .sqrt()
 
-  return Number(SquareRoot)
+  return Number(stdev)
+}
+let sampleStandardDeviation = (array) => {
+  let arr = ArrayValuesToNumbersAndCheckThatIncludesAtLeastOneValidNo(array)
+  let c = arr.length
+  let m = mean(arr)
+  let stdev = arr
+    .map((n) => {
+      let nMinusMean = Big(n).minus(Big(m))
+      let power = nMinusMean.pow(2)
+      return power
+    })
+    .reduce((a, b) => {
+      return Big(a).plus(Big(b))
+    })
+    .div(Big(c).minus(Big(1)))
+    .sqrt()
+
+  return Number(stdev)
 }
 
 module.exports = {
@@ -128,5 +198,9 @@ module.exports = {
   minimum,
   maximum,
   range,
-  standardDeviation,
+  sumOfSquares,
+  sampleVariance,
+  populationVariance,
+  populationStandardDeviation,
+  sampleStandardDeviation,
 }

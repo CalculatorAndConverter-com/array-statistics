@@ -25,7 +25,11 @@ const {
   minimum,
   maximum,
   range,
-  standardDeviation,
+  sumOfSquares,
+  sampleVariance,
+  populationVariance,
+  populationStandardDeviation,
+  sampleStandardDeviation,
 } = require("array-statistics")
 
 let array = [10, 20, 30, 10, 20]
@@ -38,17 +42,25 @@ console.log(`mode:`, mode(array))
 console.log(`minimum:`, minimum(array))
 console.log(`maximum:`, maximum(array))
 console.log(`range:`, range(array))
-console.log(`standardDeviation:`, standardDeviation(array))
+console.log(`sumOfSquares:`, sumOfSquares(array))
+console.log(`sampleVariance:`, sampleVariance(array))
+console.log(`populationVariance:`, populationVariance(array))
+console.log(`sampleStandardDeviation:`, sampleStandardDeviation(array))
+console.log(`populationStandardDeviation:`, populationStandardDeviation(array))
 
 // sum: 90
 // count: 5
 // mean: 18
 // median: 20
-// mode: [10, 20]
+// mode: [ 10, 20 ]
 // minimum: 10
 // maximum: 30
 // range: 20
-// standardDeviation: 7.483314773547883
+// sumOfSquares: 280
+// sampleVariance: 70
+// populationVariance: 56
+// sampleStandardDeviation: 8.366600265340756
+// populationStandardDeviation: 7.483314773547883
 ```
 
 ## Conversions, Value Filtering, and Error Handling
@@ -86,7 +98,12 @@ At the time of this packages launch, its sole dependency is [big.js](https://www
 
 ## Creation
 
-The functions in this package were first created by CalculatorAndConverter.com for use in this online tool: [https://calculatorandconverter.com/math/mean-median-mode-range-calculator](https://calculatorandconverter.com/math/mean-median-mode-range-calculator)
+The functions in this package were first created by CalculatorAndConverter.com for use in these online tools: \*\*\*
+
+- [https://calculatorandconverter.com/math/mean-median-mode-range-calculator](https://calculatorandconverter.com/math/mean-median-mode-range-calculator)
+- [https://calculatorandconverter.com/math/sum-of-squares-calculator](https://calculatorandconverter.com/math/sum-of-squares-calculator)
+- [https://calculatorandconverter.com/math/variance-calculator](https://calculatorandconverter.com/math/variance-calculator)
+- [https://calculatorandconverter.com/math/standard-deviation-calculator](https://calculatorandconverter.com/math/standard-deviation-calculator)
 
 We created this package to save ourselves and other developers time when needing to run basic statistical calculations on arrays.
 
