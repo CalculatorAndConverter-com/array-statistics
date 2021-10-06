@@ -1,6 +1,6 @@
 {
   "name": "array-statistics",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Simple Statistics Functions for Javascript Arrays",
   "main": "array-statistics.js",
   "dependencies": {
